@@ -30,7 +30,7 @@ SECRET_KEY = 'e+^14f(7e!g62zumfv$_iwgkjt+^3r0himizwrc@oc%576=0cz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lolitas.herokuapp.com', 'localhost']
 
 
 # Application definition
