@@ -51,7 +51,7 @@ def bookingSubmit(request):
             if day <= maxDate and day >= minDate:
                 if date == "Friday" or date == "Saturday":
                     if Booking.objects.filter(day=day).count() <11:
-                        if Booking.objects.filter(day=day, time=time)count() <1:
+                        if Booking.objects.filter(day=day, time=time).count() <1:
                             BookingForm = Booking.objects.get_or_create(
                                 user = user,
                                 table = table,
