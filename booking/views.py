@@ -6,6 +6,9 @@ from django.contrib import messages
 def index(request):
     return render(request, 'index.html',{})
 
+def menu(request):
+    return render(request, 'menu.html',{})
+
 def booking(request):
     weekdays = validWeekday(22)
 
@@ -24,7 +27,7 @@ def booking(request):
         return redirect('bookingSubmit')
 
     return render(request, 'booking.html', {
-        'weekdays':weekdays,
+        'weekdays': weekdays,
         'validateWeekdays': validateWeekdays,
     })
 

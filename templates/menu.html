@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block content %}
+<div id="home-background-container">
+  <div class="wrapper col-8 col-md-6 col-lg-4 flex f-column">
+    <!-- Cover-->
+    <div class="row">
+      <div id="fade-container">
+        <div class="row">
+          <!-- Logo title -->
+          <div>
+            <h1 class="logo">Lolita's</h1>
+            <h1>Menu</h1>
+        </div>
+        </div>
+      </div>
+      
+<-- Bottom to top button -->
+  <button
+        type="button"
+        class="btn btn-floating btn-lg btn-simple"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+  <span class="visually-hidden">Back to top button</span>
+</button>
+</div>
+{% endblock %}
