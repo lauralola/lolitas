@@ -9,16 +9,27 @@ def index(request):
 def menu(request):
     return render(request, 'menu.html',{})
 
+def reservation(request):
+    return render(request, 'reservation.html',{})
+
+def login(request):
+    return render(request, 'login.html',{})
+
 def booking(request):
+    return render(request, 'booking.html',{})
+
+    #Calling 'validWeekday' Function to Loop days you want in the next 21 days:
     weekdays = validWeekday(22)
 
+    #Only show the days that are not full:
     validateWeekdays = isWeekdayValid(weekdays)
+    
 
     if request.method == 'POST':
         table = request.POST.get('table')
         day = request.POST.get('day')
         if table == None:
-            messages.success(request, 'Please select a Table')
+            messages.success(request, "Please Select A Service!")
             return redirect('booking')
 
         request.session['day'] = day
@@ -199,7 +210,7 @@ def validWeekday(days):
     for i in range (0, days):
         x = today + timedelta(days=i)
         y = x.strftime('%A')
-        if y == 'Monday' or y == 'Saturday' or y == 'Wednesday':
+        if y == 'Friday' or y == 'Saturday':
             weekdays.append(x.strftime('%Y-%m-%d'))
     return weekdays
     

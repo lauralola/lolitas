@@ -8,41 +8,11 @@
       <div id="fade-container">
         <div class="row">
           <!-- Logo title -->
-          <div><h1 class="logo">Lolita's</h1></div>
+          <div class="card-body">
+            <h1 class="card-title">Lolita's</h1>
+            <p class="card-text">Dublin's Premier Eating Experience</p>
+            <a href="{% url 'booking' %}" class="btn btn-primary">Reservations</a>
+          </div>
         </div>
       </div>
-      <!-- {% if user.is_authenticated %}
-      Link to booking page
-        <div class="col align-self-center">
-          <div class="book-btn"><a href="{% url 'booking' %}#">Book a table</a></div>
-          
-      </div>  -->
-      <!-- {% else %} -->
-      <!-- Links to Login/Register page -->
-      <!-- <div class="col bck-login">
-        <p>
-          To enjoy all the features please <span><a class="authenticate-link" href="{% url 'account_login' %}"><b>LOGIN</b></a> / <a  class="authenticate-link" href="{% url 'account_signup' %}"><b>REGISTER</b></a></span>
-        </p>
-      </div>
-      {% endif %} -->
-      <!-- Link to about us section
-        <a href="#about-us">
-          <p class="visually-hidden">Scroll Down Icon</p>
-          <div class="arrows-link-container d-none d-lg-block">
-            <div class="arrow arrow-first"></div>
-            <div class="arrow arrow-second"></div>
-          </div>
-        </a>
-    </div>
-  </div>
-  Bottom to top button -->
-  <button
-        type="button"
-        class="btn btn-floating btn-lg btn-simple"
-        id="btn-back-to-top"
-        >
-  <i class="fas fa-arrow-up"></i>
-  <span class="visually-hidden">Back to top button</span>
-</button>
-</div>
 {% endblock %}
