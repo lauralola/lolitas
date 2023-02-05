@@ -1,28 +1,67 @@
 {% extends "base.html" %} 
 {% load static %} 
 {% block content %}
-<div id="home-background-container">
-  <div class="wrapper col-8 col-md-6 col-lg-4 flex f-column">
-    <!-- Cover-->
-    <div class="row">
-      <div id="fade-container">
-        <div class="row">
-          <!-- Logo title -->
-          <div>
-            <h1 class="logo">Lolita's</h1>
-            <h1>Menu</h1>
+
+<!-- About our Menu-->
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About our Menu</h2>
+            <h3 class="section-subheading text-muted">A new eating experience</h3>
         </div>
-        </div>
-      </div>
-      
-<-- Bottom to top button -->
-  <button
-        type="button"
-        class="btn btn-floating btn-lg btn-simple"
-        id="btn-back-to-top"
-        >
-  <i class="fas fa-arrow-up"></i>
-  <span class="visually-hidden">Back to top button</span>
-</button>
-</div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/food1.jpg' %}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>How it Started</h4>
+                        <h4 class="subheading">Our Humble Beginnings</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Inspired by her Grandmother, Lolita, our head chef Adrianna began this project with a view for using local, sustainable produce. Lolita farmed a small patch of land with vegetables and from this created beautiful and tasty meals for her large extended family</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/food2.jpg' %}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Sustainabilty</h4>
+                        <h4 class="subheading">A focus on a lower impact</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Our menu changes daily and is a provided tasting menu. Our booking form will ask for any dietary requirements and from this we will create your meals using local, sustainable produce. This keeps our carbon footprint low and promotes sustainable eating practices. </p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/food3.jpg' %}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>The Food</h4>
+                        <h4 class="subheading">Five Courses</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">We provide an appetiser, starter, main and desert each day inspired by our local market ingredients and catering to dietary requirements</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>July 2020</h4>
+                        <h4 class="subheading">Phase Two Expansion</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        Be Part
+                        <br />
+                        Of The 
+                        <br />
+                        Change!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 {% endblock %}

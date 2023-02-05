@@ -16,7 +16,7 @@ def login(request):
     return render(request, 'login.html',{})
 
 def booking(request):
-    return render(request, 'booking.html',{})
+    return render(request, 'booking.html', {})
 
     #Calling 'validWeekday' Function to Loop days you want in the next 21 days:
     weekdays = validWeekday(22)
@@ -24,7 +24,6 @@ def booking(request):
     #Only show the days that are not full:
     validateWeekdays = isWeekdayValid(weekdays)
     
-
     if request.method == 'POST':
         table = request.POST.get('table')
         day = request.POST.get('day')

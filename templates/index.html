@@ -1,18 +1,12 @@
 {% extends "base.html" %} 
 {% load static %} 
 {% block content %}
-<div id="home-background-container">
-  <div class="wrapper col-8 col-md-6 col-lg-4 flex f-column">
-    <!-- Cover-->
-    <div class="row">
-      <div id="fade-container">
-        <div class="row">
-          <!-- Logo title -->
-          <div class="card-body">
-            <h1 class="card-title">Lolita's</h1>
-            <p class="card-text">Dublin's Premier Eating Experience</p>
-            <a href="{% url 'booking' %}" class="btn btn-primary">Reservations</a>
-          </div>
-        </div>
-      </div>
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="masthead-subheading">Lolitas</div>
+    <div class="masthead-heading text-uppercase">Dublin's Premier Eating Experience</div>
+    <a class="btn btn-primary btn-xl text-uppercase" href="{% url 'booking' %}">Reservations</a>
+</header>
+
 {% endblock %}
